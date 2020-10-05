@@ -24,19 +24,19 @@ module.exports = function repeater(
     additionRepeatTimes = 0;
   }
 
-  let res = '';
+  let result = '';
 
   for (let i = 0; i < repeatTimes; i++) {
-    res += str;
+    result += str;
     for (let j = 0; j < additionRepeatTimes; j++) {
-      res += addition;
+      result += addition;
       if (j < additionRepeatTimes - 1) {
-        res += additionSeparator;
+        result += additionSeparator;
       }
     }
     if (i < repeatTimes - 1) {
-      res += separator;
+      result += separator;
     }
   }
-  return res;
+  return result;
 };
